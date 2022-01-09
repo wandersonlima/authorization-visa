@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: authorizer-visa
+  tags:
+    - dotnet
+    - microservice
+spec:
+  type: service
+  lifecycle: production
+  owner: authorizer-team
+  system: authorization
+  dependsOn:
+    - Component:transactions
