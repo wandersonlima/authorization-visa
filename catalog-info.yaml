@@ -10,5 +10,21 @@ spec:
   lifecycle: production
   owner: authorizer-team
   system: authorization
+  providesApis:
+    - authorizer-visa
   dependsOn:
     - Component:transactions
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: authorizer-visa
+spec:
+  type: openapi
+  lifecycle: production
+  owner: authorizer-team
+  system: authorization
+  definition:
+    $text: ./openapi.json
