@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: authorizer-visa
   annotations:
-    prometheus.io/rule: alll
+    prometheus.io/rule: all
   tags:
     - dotnet
     - microservice
