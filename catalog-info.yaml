@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: authorizer-visa
   annotations:
-    prometheus.io/rule: all
+    prometheus.io/rule: 'Watchdog'
     prometheus.io/rule: node_memory_Active_bytes|instance
   tags:
     - dotnet
