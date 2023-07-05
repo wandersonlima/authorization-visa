@@ -4,7 +4,6 @@ metadata:
   name: authorizer-visa
   annotations:
     prometheus.io/alert: Watchdog
-    prometheus.io/rule: node_memory_Active_bytes|instance
   tags:
     - dotnet
     - microservice
