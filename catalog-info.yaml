@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: authorizer-visa
+  annotations:
+    prometheus.io/rule: alll
   tags:
     - dotnet
     - microservice
